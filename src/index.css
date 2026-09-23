@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.app{
+    padding: 0px 6%;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    position: relative;
+}
+
+input, select{
+    outline: none;
+}
+
+button {
+    outline: none;
+}
+
+body {
+    background-color: white;
+    color: #222;
+}
+
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+Link{
+    text-decoration: none;
+}
+
+
+/* GLOBAL THEME */
+
+.app {
+    --page-bg: #ffffff;
+    --text-color: #75285b;
+    --secondary-text: #475569;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+.app.dark-mode {
+    --page-bg: #0f172a;
+    --text-color: #f8fafc;
+    --secondary-text: #cbd5e1;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+}
+
+
+/* GLOBAL PAGE THEME */
+
+.app {
+    background-color: var(--page-bg);
+    color: var(--text-color);
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* GLOBAL BODY THEME */
+
+body {
+    background-color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+body:has(.app.dark-mode) {
+    background-color: #0f172a;
+}
+

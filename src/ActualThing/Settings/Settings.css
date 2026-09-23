@@ -1,0 +1,460 @@
+.settings-section {
+
+    background-color: var(--card-bg);
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid var(--border-color);
+
+    transition: background-color 0.25s, border-color 0.25s;
+
+}
+
+.settings-section h2 {
+
+    color: var(--text-color);
+
+    margin-bottom: 25px;
+
+    font-size: 24px;
+
+}
+
+
+/* FIELDS */
+
+.settings-field {
+
+    margin-bottom: 20px;
+
+}
+
+.settings-field label {
+
+    display: block;
+
+    color: var(--text-color);
+
+    font-size: 16px;
+
+    margin-bottom: 8px;
+
+}
+
+.settings-field input {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 13px 15px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background-color: var(--page-bg);
+
+    color: var(--text-color);
+
+}
+
+.settings-field input::placeholder {
+
+    color: var(--secondary-text);
+
+}
+
+.settings-field input:focus {
+
+    border-color: #75285b;
+
+}
+
+
+/* SELECT */
+
+.settings-field select {
+
+    width: 220px;
+
+    padding: 13px 15px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+
+    background-color: var(--page-bg);
+
+    color: var(--text-color);
+
+    font-size: 16px;
+
+    outline: none;
+
+    cursor: pointer;
+
+}
+
+.settings-field select:focus {
+
+    border-color: #75285b;
+
+}
+
+
+/* BUTTON */
+
+.save-settings {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #601D49;
+
+    color: #ffffff;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+
+}
+
+.save-settings:hover {
+
+    background-color: #75285b;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* SUCCESS MESSAGE */
+
+.saved-message {
+
+    color: var(--text-color);
+
+    margin-top: 15px;
+
+    font-size: 16px;
+
+}
+
+
+/* NOTIFICATIONS */
+
+.notification-setting {
+
+    margin-bottom: 20px;
+
+}
+
+.notification-setting label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: var(--secondary-text);
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+}
+
+.notification-setting input[type="checkbox"] {
+
+    appearance: none;
+
+    width: 20px;
+
+    height: 20px;
+
+    border: 2px solid var(--border-color);
+
+    border-radius: 5px;
+
+    background-color: var(--page-bg);
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition: 0.2s;
+
+}
+
+.notification-setting input[type="checkbox"]:checked {
+
+    background-color: #601D49;
+
+    border-color: #601D49;
+
+}
+
+.notification-setting input[type="checkbox"]:checked::after {
+
+    content: "✓";
+
+    position: absolute;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    left: 3px;
+
+    top: -1px;
+
+}
+
+.notification-setting p {
+
+    margin-top: 10px;
+
+    margin-left: 32px;
+
+    color: var(--secondary-text);
+
+    font-size: 15px;
+
+}
+
+
+/* PASSWORD */
+
+.password-input {
+
+    display: flex;
+
+    align-items: center;
+
+    width: 100%;
+
+}
+
+.password-input input {
+
+    flex: 1;
+
+    width: auto;
+
+    border-radius: 8px 0 0 8px;
+
+}
+
+.password-input button {
+
+    height: 48px;
+
+    padding: 0 15px;
+
+    border: 1px solid var(--border-color);
+
+    border-left: none;
+
+    border-radius: 0 8px 8px 0;
+
+    background-color: var(--page-bg);
+
+    color: var(--text-color);
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+}
+
+.password-input button:hover {
+
+    background-color: var(--border-color);
+
+}
+
+.password-error {
+
+    color: #dc2626;
+
+    margin-bottom: 15px;
+
+    font-size: 16px;
+
+}
+
+
+/* DANGER ZONE */
+
+.danger-zone {
+
+    border: 1px solid #dc2626;
+
+}
+
+.danger-zone h2 {
+
+    color: #dc2626;
+
+}
+
+.danger-zone > p {
+
+    color: var(--secondary-text);
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+
+}
+
+.delete-account {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #dc2626;
+
+    color: white;
+
+    font-size: 17px;
+
+    cursor: pointer;
+
+}
+
+.delete-account:hover {
+
+    opacity: 0.9;
+
+}
+
+.delete-confirm {
+
+    padding: 18px;
+
+    border-radius: 8px;
+
+    background-color: var(--page-bg);
+
+    border: 1px solid var(--border-color);
+
+}
+
+.delete-confirm p {
+
+    color: var(--text-color);
+
+    font-size: 16px;
+
+    line-height: 1.5;
+
+    margin-bottom: 15px;
+
+}
+
+.delete-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+
+}
+
+.cancel-delete,
+
+.confirm-delete {
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+.cancel-delete {
+
+    background-color: var(--page-bg);
+
+    color: var(--text-color);
+
+    border: 1px solid var(--border-color);
+
+}
+
+.confirm-delete {
+
+    background-color: #dc2626;
+
+    color: white;
+
+}
+
+.cancel-delete:hover,
+
+.confirm-delete:hover {
+
+    opacity: 0.9;
+
+}
+
+
+.delete-now {
+
+    padding: 10px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background-color: #991b1b;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+.delete-now:hover {
+
+    opacity: 0.9;
+
+}
+
